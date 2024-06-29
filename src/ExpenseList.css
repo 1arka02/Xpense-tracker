@@ -1,0 +1,140 @@
+
+   .expense-list-container {
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .list{
+    color: #4CAF50;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight:bold ;
+  }
+.back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+   .back img{
+     border-radius: 4em;
+     width:20%;
+   }
+  .category-icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .expense-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .expense-table th, .expense-table td {
+    padding: 0.8em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .expense-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .expense-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .expense-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .expense-table button {
+    padding: 0.5em 0.8em;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .expense-table button:hover {
+    opacity: 0.8;
+  }
+  
+  .expense-table button:first-of-type {
+    background-color: #4CAF50;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .expense-table button:last-of-type {
+    background-color: #f44336;
+    color: white;
+  }
+  .filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .filter-container label {
+    margin-right: 10px;
+  }
+  
+  .filter-container select {
+    padding: 0.4em;
+  }
+  
+  .total-amount {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .expense-table th, .expense-table td {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    .expense-table button {
+      padding: 0.5em 0.6em;
+    }
+  
+    .total-amount {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 500px){
+
+    .expense-table th, .expense-table td {
+      padding: 2px;
+      font-size: 0.5em;
+    }
+  
+    .expense-table button {
+      padding: 3px 3px;
+      font-size: 1.5em;
+    }
+  
+    .total-amount {
+      font-size: 1em;
+    }
+  
+  }
